@@ -1,0 +1,60 @@
+.categorie {
+  display: flex;
+  height: 80vh;
+  gap: 10px;
+  margin: 10px;
+
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col-l {
+    flex: 2;
+  }
+
+  .row {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      scale: 1.05;
+      transition: ease-in-out 0.5s;
+      opacity: 0.9;
+    }
+
+    button {
+      position: absolute;
+      width: fit-content;
+      min-width: 100px;
+      height: 50px;
+      padding: 10px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover {
+        background-color: rgb(190, 187, 187);
+
+        scale: 1.1;
+        transition: ease-in-out 0.5s;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
